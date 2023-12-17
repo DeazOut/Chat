@@ -1,16 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ContainerEl><ChatMessage datatime="sd" name="sd">Привет!</ChatMessage></ContainerEl>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ContainerEl from './components/Container.vue'
+import ChatMessage from './components/ChatMessage.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ContainerEl,
+    ChatMessage
+  },
+  
 }
 </script>
 
